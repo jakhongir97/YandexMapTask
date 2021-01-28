@@ -9,23 +9,69 @@
 /* Begin PBXBuildFile section */
 		32DC970325C2EB9900947118 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC970225C2EB9900947118 /* AppDelegate.swift */; };
 		32DC970525C2EB9900947118 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC970425C2EB9900947118 /* SceneDelegate.swift */; };
-		32DC970725C2EB9900947118 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC970625C2EB9900947118 /* ViewController.swift */; };
-		32DC970A25C2EB9900947118 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32DC970825C2EB9900947118 /* Main.storyboard */; };
+		32DC970725C2EB9900947118 /* AddessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC970625C2EB9900947118 /* AddessViewController.swift */; };
 		32DC970D25C2EB9900947118 /* YandexMapTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 32DC970B25C2EB9900947118 /* YandexMapTask.xcdatamodeld */; };
 		32DC970F25C2EB9A00947118 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32DC970E25C2EB9A00947118 /* Assets.xcassets */; };
 		32DC971225C2EB9A00947118 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32DC971025C2EB9A00947118 /* LaunchScreen.storyboard */; };
+		32DC972025C2EF5200947118 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC971F25C2EF5200947118 /* TabBarController.swift */; };
+		32DC972525C2EF9500947118 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC972425C2EF9500947118 /* UIColor.swift */; };
+		32DC972A25C2EFC400947118 /* AssetsColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC972925C2EFC400947118 /* AssetsColor.swift */; };
+		32DC972E25C2EFFB00947118 /* AssetsImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC972D25C2EFFB00947118 /* AssetsImage.swift */; };
+		32DC973125C2F02D00947118 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC973025C2F02D00947118 /* UIImage.swift */; };
+		32DC973725C2F0E300947118 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC973625C2F0E300947118 /* Coordinator.swift */; };
+		32DC973B25C2F17100947118 /* AddressCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC973A25C2F17100947118 /* AddressCoordinator.swift */; };
+		32DC974125C2F1A200947118 /* MapCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC974025C2F1A200947118 /* MapCoordinator.swift */; };
+		32DC974425C2F1B200947118 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC974325C2F1B200947118 /* ProfileCoordinator.swift */; };
+		32DC974925C2F59E00947118 /* ViewSpecificController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC974825C2F59E00947118 /* ViewSpecificController.swift */; };
+		32DC974C25C2F5FD00947118 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC974B25C2F5FD00947118 /* AlertViewController.swift */; };
+		32DC975125C2F65C00947118 /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC975025C2F65C00947118 /* AddressView.swift */; };
+		32DC975425C2F66800947118 /* AddressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32DC975325C2F66800947118 /* AddressView.xib */; };
+		32DC975825C2F69F00947118 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC975725C2F69F00947118 /* CustomView.swift */; };
+		32DC975C25C2F78600947118 /* AddressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC975B25C2F78600947118 /* AddressViewModel.swift */; };
+		32DC976325C2F9DF00947118 /* UITabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC976225C2F9DF00947118 /* UITabBarItem.swift */; };
+		32DC976925C2FC1700947118 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC976825C2FC1700947118 /* MapViewController.swift */; };
+		32DC976D25C2FC2300947118 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC976C25C2FC2300947118 /* MapView.swift */; };
+		32DC977025C2FC2B00947118 /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32DC976F25C2FC2B00947118 /* MapView.xib */; };
+		32DC977325C2FC3600947118 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC977225C2FC3600947118 /* MapViewModel.swift */; };
+		32DC977C25C2FD0100947118 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC977B25C2FD0100947118 /* ProfileView.swift */; };
+		32DC977F25C2FD0A00947118 /* ProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32DC977E25C2FD0A00947118 /* ProfileView.xib */; };
+		32DC978225C2FD1B00947118 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC978125C2FD1B00947118 /* ProfileViewController.swift */; };
+		32DC978625C2FFED00947118 /* UINavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC978525C2FFED00947118 /* UINavigationBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		32DC96FF25C2EB9900947118 /* YandexMapTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YandexMapTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32DC970225C2EB9900947118 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32DC970425C2EB9900947118 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		32DC970625C2EB9900947118 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		32DC970925C2EB9900947118 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		32DC970625C2EB9900947118 /* AddessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddessViewController.swift; sourceTree = "<group>"; };
 		32DC970C25C2EB9900947118 /* YandexMapTask.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YandexMapTask.xcdatamodel; sourceTree = "<group>"; };
 		32DC970E25C2EB9A00947118 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32DC971125C2EB9A00947118 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32DC971325C2EB9A00947118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32DC971F25C2EF5200947118 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		32DC972425C2EF9500947118 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		32DC972925C2EFC400947118 /* AssetsColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsColor.swift; sourceTree = "<group>"; };
+		32DC972D25C2EFFB00947118 /* AssetsImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsImage.swift; sourceTree = "<group>"; };
+		32DC973025C2F02D00947118 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		32DC973625C2F0E300947118 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		32DC973A25C2F17100947118 /* AddressCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressCoordinator.swift; sourceTree = "<group>"; };
+		32DC974025C2F1A200947118 /* MapCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCoordinator.swift; sourceTree = "<group>"; };
+		32DC974325C2F1B200947118 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		32DC974825C2F59E00947118 /* ViewSpecificController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSpecificController.swift; sourceTree = "<group>"; };
+		32DC974B25C2F5FD00947118 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		32DC975025C2F65C00947118 /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
+		32DC975325C2F66800947118 /* AddressView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressView.xib; sourceTree = "<group>"; };
+		32DC975725C2F69F00947118 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		32DC975B25C2F78600947118 /* AddressViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressViewModel.swift; sourceTree = "<group>"; };
+		32DC976225C2F9DF00947118 /* UITabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarItem.swift; sourceTree = "<group>"; };
+		32DC976825C2FC1700947118 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		32DC976C25C2FC2300947118 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		32DC976F25C2FC2B00947118 /* MapView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
+		32DC977225C2FC3600947118 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		32DC977B25C2FD0100947118 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		32DC977E25C2FD0A00947118 /* ProfileView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileView.xib; sourceTree = "<group>"; };
+		32DC978125C2FD1B00947118 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		32DC978525C2FFED00947118 /* UINavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +104,183 @@
 		32DC970125C2EB9900947118 /* YandexMapTask */ = {
 			isa = PBXGroup;
 			children = (
+				32DC972225C2EF6700947118 /* Additional Materials */,
+				32DC973325C2F06500947118 /* TabBarController */,
+				32DC973925C2F10000947118 /* Address */,
+				32DC973E25C2F17D00947118 /* Map */,
+				32DC973F25C2F18700947118 /* Profile */,
+				32DC971C25C2ECBC00947118 /* Resources */,
+			);
+			path = YandexMapTask;
+			sourceTree = "<group>";
+		};
+		32DC971C25C2ECBC00947118 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				32DC970225C2EB9900947118 /* AppDelegate.swift */,
 				32DC970425C2EB9900947118 /* SceneDelegate.swift */,
-				32DC970625C2EB9900947118 /* ViewController.swift */,
-				32DC970825C2EB9900947118 /* Main.storyboard */,
 				32DC970E25C2EB9A00947118 /* Assets.xcassets */,
 				32DC971025C2EB9A00947118 /* LaunchScreen.storyboard */,
 				32DC971325C2EB9A00947118 /* Info.plist */,
 				32DC970B25C2EB9900947118 /* YandexMapTask.xcdatamodeld */,
 			);
-			path = YandexMapTask;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		32DC972225C2EF6700947118 /* Additional Materials */ = {
+			isa = PBXGroup;
+			children = (
+				32DC975625C2F68F00947118 /* Classes */,
+				32DC973525C2F0D700947118 /* Protocols */,
+				32DC972825C2EFB300947118 /* Constants */,
+				32DC972325C2EF8200947118 /* Extensions */,
+			);
+			path = "Additional Materials";
+			sourceTree = "<group>";
+		};
+		32DC972325C2EF8200947118 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				32DC972425C2EF9500947118 /* UIColor.swift */,
+				32DC973025C2F02D00947118 /* UIImage.swift */,
+				32DC976225C2F9DF00947118 /* UITabBarItem.swift */,
+				32DC978525C2FFED00947118 /* UINavigationBar.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		32DC972825C2EFB300947118 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				32DC972925C2EFC400947118 /* AssetsColor.swift */,
+				32DC972D25C2EFFB00947118 /* AssetsImage.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		32DC973325C2F06500947118 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				32DC971F25C2EF5200947118 /* TabBarController.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		32DC973525C2F0D700947118 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				32DC973625C2F0E300947118 /* Coordinator.swift */,
+				32DC974825C2F59E00947118 /* ViewSpecificController.swift */,
+				32DC974B25C2F5FD00947118 /* AlertViewController.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		32DC973925C2F10000947118 /* Address */ = {
+			isa = PBXGroup;
+			children = (
+				32DC973A25C2F17100947118 /* AddressCoordinator.swift */,
+				32DC974625C2F1BD00947118 /* Address */,
+			);
+			path = Address;
+			sourceTree = "<group>";
+		};
+		32DC973E25C2F17D00947118 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				32DC974025C2F1A200947118 /* MapCoordinator.swift */,
+				32DC976525C2FBDB00947118 /* Map */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		32DC973F25C2F18700947118 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				32DC974325C2F1B200947118 /* ProfileCoordinator.swift */,
+				32DC977525C2FCD400947118 /* Profile */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		32DC974625C2F1BD00947118 /* Address */ = {
+			isa = PBXGroup;
+			children = (
+				32DC970625C2EB9900947118 /* AddessViewController.swift */,
+				32DC974F25C2F65100947118 /* View */,
+				32DC975A25C2F76300947118 /* View Model */,
+			);
+			path = Address;
+			sourceTree = "<group>";
+		};
+		32DC974F25C2F65100947118 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				32DC975025C2F65C00947118 /* AddressView.swift */,
+				32DC975325C2F66800947118 /* AddressView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		32DC975625C2F68F00947118 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				32DC975725C2F69F00947118 /* CustomView.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		32DC975A25C2F76300947118 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				32DC975B25C2F78600947118 /* AddressViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		32DC976525C2FBDB00947118 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				32DC976825C2FC1700947118 /* MapViewController.swift */,
+				32DC976625C2FBFA00947118 /* View */,
+				32DC976725C2FBFE00947118 /* View Model */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		32DC976625C2FBFA00947118 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				32DC976C25C2FC2300947118 /* MapView.swift */,
+				32DC976F25C2FC2B00947118 /* MapView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		32DC976725C2FBFE00947118 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				32DC977225C2FC3600947118 /* MapViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		32DC977525C2FCD400947118 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				32DC978125C2FD1B00947118 /* ProfileViewController.swift */,
+				32DC977625C2FCDC00947118 /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		32DC977625C2FCDC00947118 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				32DC977B25C2FD0100947118 /* ProfileView.swift */,
+				32DC977E25C2FD0A00947118 /* ProfileView.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,9 +340,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32DC975425C2F66800947118 /* AddressView.xib in Resources */,
+				32DC977F25C2FD0A00947118 /* ProfileView.xib in Resources */,
+				32DC977025C2FC2B00947118 /* MapView.xib in Resources */,
 				32DC971225C2EB9A00947118 /* LaunchScreen.storyboard in Resources */,
 				32DC970F25C2EB9A00947118 /* Assets.xcassets in Resources */,
-				32DC970A25C2EB9900947118 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,23 +356,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				32DC970D25C2EB9900947118 /* YandexMapTask.xcdatamodeld in Sources */,
-				32DC970725C2EB9900947118 /* ViewController.swift in Sources */,
+				32DC972525C2EF9500947118 /* UIColor.swift in Sources */,
+				32DC974925C2F59E00947118 /* ViewSpecificController.swift in Sources */,
+				32DC976925C2FC1700947118 /* MapViewController.swift in Sources */,
+				32DC973725C2F0E300947118 /* Coordinator.swift in Sources */,
+				32DC972E25C2EFFB00947118 /* AssetsImage.swift in Sources */,
+				32DC970725C2EB9900947118 /* AddessViewController.swift in Sources */,
+				32DC976D25C2FC2300947118 /* MapView.swift in Sources */,
 				32DC970325C2EB9900947118 /* AppDelegate.swift in Sources */,
+				32DC972025C2EF5200947118 /* TabBarController.swift in Sources */,
+				32DC973125C2F02D00947118 /* UIImage.swift in Sources */,
+				32DC975825C2F69F00947118 /* CustomView.swift in Sources */,
+				32DC976325C2F9DF00947118 /* UITabBarItem.swift in Sources */,
+				32DC974425C2F1B200947118 /* ProfileCoordinator.swift in Sources */,
+				32DC975C25C2F78600947118 /* AddressViewModel.swift in Sources */,
+				32DC977C25C2FD0100947118 /* ProfileView.swift in Sources */,
+				32DC972A25C2EFC400947118 /* AssetsColor.swift in Sources */,
+				32DC974125C2F1A200947118 /* MapCoordinator.swift in Sources */,
+				32DC977325C2FC3600947118 /* MapViewModel.swift in Sources */,
 				32DC970525C2EB9900947118 /* SceneDelegate.swift in Sources */,
+				32DC975125C2F65C00947118 /* AddressView.swift in Sources */,
+				32DC978225C2FD1B00947118 /* ProfileViewController.swift in Sources */,
+				32DC974C25C2F5FD00947118 /* AlertViewController.swift in Sources */,
+				32DC973B25C2F17100947118 /* AddressCoordinator.swift in Sources */,
+				32DC978625C2FFED00947118 /* UINavigationBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		32DC970825C2EB9900947118 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				32DC970925C2EB9900947118 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		32DC971025C2EB9A00947118 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +520,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7A9V4SQ8LR;
-				INFOPLIST_FILE = YandexMapTask/Info.plist;
+				INFOPLIST_FILE = YandexMapTask/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +528,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jakhongir.YandexMapTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -311,7 +539,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7A9V4SQ8LR;
-				INFOPLIST_FILE = YandexMapTask/Info.plist;
+				INFOPLIST_FILE = YandexMapTask/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,7 +547,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jakhongir.YandexMapTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
