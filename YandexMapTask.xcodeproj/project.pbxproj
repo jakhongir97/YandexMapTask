@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -37,9 +37,22 @@
 		32DC977F25C2FD0A00947118 /* ProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32DC977E25C2FD0A00947118 /* ProfileView.xib */; };
 		32DC978225C2FD1B00947118 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC978125C2FD1B00947118 /* ProfileViewController.swift */; };
 		32DC978625C2FFED00947118 /* UINavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC978525C2FFED00947118 /* UINavigationBar.swift */; };
+		32DC979425C3085000947118 /* AddressDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC979325C3085000947118 /* AddressDataProvider.swift */; };
+		32DC979925C308B100947118 /* AddressCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC979725C308B100947118 /* AddressCollectionViewCell.swift */; };
+		32DC979A25C308B100947118 /* AddressCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32DC979825C308B100947118 /* AddressCollectionViewCell.xib */; };
+		32DC979D25C30ABD00947118 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC979C25C30ABD00947118 /* ReusableView.swift */; };
+		32DC97A025C30AF000947118 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC979F25C30AF000947118 /* UIView.swift */; };
+		32DC97A325C30DFE00947118 /* YandexMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC97A225C30DFE00947118 /* YandexMap.swift */; };
+		32DC97A725C3101300947118 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC97A625C3101300947118 /* SearchView.swift */; };
+		32DC97AC25C3102C00947118 /* SearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32DC97AB25C3102C00947118 /* SearchView.xib */; };
+		32DC97AF25C3130500947118 /* UISearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC97AE25C3130500947118 /* UISearchBar.swift */; };
+		32DC97B325C319B700947118 /* PickerPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC97B225C319B700947118 /* PickerPinView.swift */; };
+		32DC97B725C319C200947118 /* PickerPinView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32DC97B625C319C200947118 /* PickerPinView.xib */; };
+		5488A09C714394A4ABF3AE32 /* Pods_YandexMapTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD6262F9749B37BFA97BC49 /* Pods_YandexMapTask.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01E1607C8DFDA72F5DB94201 /* Pods-YandexMapTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YandexMapTask.release.xcconfig"; path = "Target Support Files/Pods-YandexMapTask/Pods-YandexMapTask.release.xcconfig"; sourceTree = "<group>"; };
 		32DC96FF25C2EB9900947118 /* YandexMapTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YandexMapTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32DC970225C2EB9900947118 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32DC970425C2EB9900947118 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +85,19 @@
 		32DC977E25C2FD0A00947118 /* ProfileView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileView.xib; sourceTree = "<group>"; };
 		32DC978125C2FD1B00947118 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		32DC978525C2FFED00947118 /* UINavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationBar.swift; sourceTree = "<group>"; };
+		32DC979325C3085000947118 /* AddressDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressDataProvider.swift; sourceTree = "<group>"; };
+		32DC979725C308B100947118 /* AddressCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressCollectionViewCell.swift; sourceTree = "<group>"; };
+		32DC979825C308B100947118 /* AddressCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressCollectionViewCell.xib; sourceTree = "<group>"; };
+		32DC979C25C30ABD00947118 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		32DC979F25C30AF000947118 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		32DC97A225C30DFE00947118 /* YandexMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YandexMap.swift; sourceTree = "<group>"; };
+		32DC97A625C3101300947118 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		32DC97AB25C3102C00947118 /* SearchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchView.xib; sourceTree = "<group>"; };
+		32DC97AE25C3130500947118 /* UISearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISearchBar.swift; sourceTree = "<group>"; };
+		32DC97B225C319B700947118 /* PickerPinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerPinView.swift; sourceTree = "<group>"; };
+		32DC97B625C319C200947118 /* PickerPinView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerPinView.xib; sourceTree = "<group>"; };
+		63B8E48EC5CECBF8FAC7D9B5 /* Pods-YandexMapTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YandexMapTask.debug.xcconfig"; path = "Target Support Files/Pods-YandexMapTask/Pods-YandexMapTask.debug.xcconfig"; sourceTree = "<group>"; };
+		BDD6262F9749B37BFA97BC49 /* Pods_YandexMapTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YandexMapTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,17 +105,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5488A09C714394A4ABF3AE32 /* Pods_YandexMapTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		139E0B4D65E77311D72AC7FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BDD6262F9749B37BFA97BC49 /* Pods_YandexMapTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		32DC96F625C2EB9900947118 = {
 			isa = PBXGroup;
 			children = (
 				32DC970125C2EB9900947118 /* YandexMapTask */,
 				32DC970025C2EB9900947118 /* Products */,
+				7DF773D598E1F4FDE940AC23 /* Pods */,
+				139E0B4D65E77311D72AC7FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,6 +182,8 @@
 				32DC973025C2F02D00947118 /* UIImage.swift */,
 				32DC976225C2F9DF00947118 /* UITabBarItem.swift */,
 				32DC978525C2FFED00947118 /* UINavigationBar.swift */,
+				32DC979F25C30AF000947118 /* UIView.swift */,
+				32DC97AE25C3130500947118 /* UISearchBar.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -154,6 +193,7 @@
 			children = (
 				32DC972925C2EFC400947118 /* AssetsColor.swift */,
 				32DC972D25C2EFFB00947118 /* AssetsImage.swift */,
+				32DC97A225C30DFE00947118 /* YandexMap.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -172,6 +212,7 @@
 				32DC973625C2F0E300947118 /* Coordinator.swift */,
 				32DC974825C2F59E00947118 /* ViewSpecificController.swift */,
 				32DC974B25C2F5FD00947118 /* AlertViewController.swift */,
+				32DC979C25C30ABD00947118 /* ReusableView.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -206,7 +247,7 @@
 		32DC974625C2F1BD00947118 /* Address */ = {
 			isa = PBXGroup;
 			children = (
-				32DC970625C2EB9900947118 /* AddessViewController.swift */,
+				32DC979225C3082F00947118 /* Data Provider */,
 				32DC974F25C2F65100947118 /* View */,
 				32DC975A25C2F76300947118 /* View Model */,
 			);
@@ -216,8 +257,9 @@
 		32DC974F25C2F65100947118 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				32DC975025C2F65C00947118 /* AddressView.swift */,
-				32DC975325C2F66800947118 /* AddressView.xib */,
+				32DC970625C2EB9900947118 /* AddessViewController.swift */,
+				32DC978F25C307C500947118 /* Root View */,
+				32DC979025C307D600947118 /* Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -242,19 +284,21 @@
 			isa = PBXGroup;
 			children = (
 				32DC976825C2FC1700947118 /* MapViewController.swift */,
-				32DC976625C2FBFA00947118 /* View */,
+				32DC976625C2FBFA00947118 /* Map View */,
+				32DC97A525C30FEF00947118 /* Search View */,
+				32DC97B125C3197800947118 /* PickerPin View */,
 				32DC976725C2FBFE00947118 /* View Model */,
 			);
 			path = Map;
 			sourceTree = "<group>";
 		};
-		32DC976625C2FBFA00947118 /* View */ = {
+		32DC976625C2FBFA00947118 /* Map View */ = {
 			isa = PBXGroup;
 			children = (
 				32DC976C25C2FC2300947118 /* MapView.swift */,
 				32DC976F25C2FC2B00947118 /* MapView.xib */,
 			);
-			path = View;
+			path = "Map View";
 			sourceTree = "<group>";
 		};
 		32DC976725C2FBFE00947118 /* View Model */ = {
@@ -283,6 +327,59 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		32DC978F25C307C500947118 /* Root View */ = {
+			isa = PBXGroup;
+			children = (
+				32DC975025C2F65C00947118 /* AddressView.swift */,
+				32DC975325C2F66800947118 /* AddressView.xib */,
+			);
+			path = "Root View";
+			sourceTree = "<group>";
+		};
+		32DC979025C307D600947118 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				32DC979725C308B100947118 /* AddressCollectionViewCell.swift */,
+				32DC979825C308B100947118 /* AddressCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		32DC979225C3082F00947118 /* Data Provider */ = {
+			isa = PBXGroup;
+			children = (
+				32DC979325C3085000947118 /* AddressDataProvider.swift */,
+			);
+			path = "Data Provider";
+			sourceTree = "<group>";
+		};
+		32DC97A525C30FEF00947118 /* Search View */ = {
+			isa = PBXGroup;
+			children = (
+				32DC97A625C3101300947118 /* SearchView.swift */,
+				32DC97AB25C3102C00947118 /* SearchView.xib */,
+			);
+			path = "Search View";
+			sourceTree = "<group>";
+		};
+		32DC97B125C3197800947118 /* PickerPin View */ = {
+			isa = PBXGroup;
+			children = (
+				32DC97B225C319B700947118 /* PickerPinView.swift */,
+				32DC97B625C319C200947118 /* PickerPinView.xib */,
+			);
+			path = "PickerPin View";
+			sourceTree = "<group>";
+		};
+		7DF773D598E1F4FDE940AC23 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				63B8E48EC5CECBF8FAC7D9B5 /* Pods-YandexMapTask.debug.xcconfig */,
+				01E1607C8DFDA72F5DB94201 /* Pods-YandexMapTask.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -290,9 +387,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 32DC971625C2EB9A00947118 /* Build configuration list for PBXNativeTarget "YandexMapTask" */;
 			buildPhases = (
+				B76B8D206FD84D8701F92566 /* [CP] Check Pods Manifest.lock */,
 				32DC96FB25C2EB9900947118 /* Sources */,
 				32DC96FC25C2EB9900947118 /* Frameworks */,
 				32DC96FD25C2EB9900947118 /* Resources */,
+				2E2C47119371CF72FC9A43EF /* [CP] Embed Pods Frameworks */,
+				13514E1FCC359C5AB1A38C1F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -341,14 +441,76 @@
 			buildActionMask = 2147483647;
 			files = (
 				32DC975425C2F66800947118 /* AddressView.xib in Resources */,
+				32DC97AC25C3102C00947118 /* SearchView.xib in Resources */,
+				32DC97B725C319C200947118 /* PickerPinView.xib in Resources */,
 				32DC977F25C2FD0A00947118 /* ProfileView.xib in Resources */,
 				32DC977025C2FC2B00947118 /* MapView.xib in Resources */,
+				32DC979A25C308B100947118 /* AddressCollectionViewCell.xib in Resources */,
 				32DC971225C2EB9A00947118 /* LaunchScreen.storyboard in Resources */,
 				32DC970F25C2EB9A00947118 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13514E1FCC359C5AB1A38C1F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YandexMapTask/Pods-YandexMapTask-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YandexMapTask/Pods-YandexMapTask-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YandexMapTask/Pods-YandexMapTask-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E2C47119371CF72FC9A43EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YandexMapTask/Pods-YandexMapTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YandexMapTask/Pods-YandexMapTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YandexMapTask/Pods-YandexMapTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B76B8D206FD84D8701F92566 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YandexMapTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		32DC96FB25C2EB9900947118 /* Sources */ = {
@@ -359,27 +521,35 @@
 				32DC972525C2EF9500947118 /* UIColor.swift in Sources */,
 				32DC974925C2F59E00947118 /* ViewSpecificController.swift in Sources */,
 				32DC976925C2FC1700947118 /* MapViewController.swift in Sources */,
+				32DC97A025C30AF000947118 /* UIView.swift in Sources */,
 				32DC973725C2F0E300947118 /* Coordinator.swift in Sources */,
 				32DC972E25C2EFFB00947118 /* AssetsImage.swift in Sources */,
+				32DC97A325C30DFE00947118 /* YandexMap.swift in Sources */,
+				32DC979925C308B100947118 /* AddressCollectionViewCell.swift in Sources */,
 				32DC970725C2EB9900947118 /* AddessViewController.swift in Sources */,
 				32DC976D25C2FC2300947118 /* MapView.swift in Sources */,
 				32DC970325C2EB9900947118 /* AppDelegate.swift in Sources */,
 				32DC972025C2EF5200947118 /* TabBarController.swift in Sources */,
 				32DC973125C2F02D00947118 /* UIImage.swift in Sources */,
 				32DC975825C2F69F00947118 /* CustomView.swift in Sources */,
+				32DC97A725C3101300947118 /* SearchView.swift in Sources */,
 				32DC976325C2F9DF00947118 /* UITabBarItem.swift in Sources */,
 				32DC974425C2F1B200947118 /* ProfileCoordinator.swift in Sources */,
 				32DC975C25C2F78600947118 /* AddressViewModel.swift in Sources */,
 				32DC977C25C2FD0100947118 /* ProfileView.swift in Sources */,
 				32DC972A25C2EFC400947118 /* AssetsColor.swift in Sources */,
+				32DC97AF25C3130500947118 /* UISearchBar.swift in Sources */,
 				32DC974125C2F1A200947118 /* MapCoordinator.swift in Sources */,
+				32DC979D25C30ABD00947118 /* ReusableView.swift in Sources */,
 				32DC977325C2FC3600947118 /* MapViewModel.swift in Sources */,
 				32DC970525C2EB9900947118 /* SceneDelegate.swift in Sources */,
 				32DC975125C2F65C00947118 /* AddressView.swift in Sources */,
 				32DC978225C2FD1B00947118 /* ProfileViewController.swift in Sources */,
 				32DC974C25C2F5FD00947118 /* AlertViewController.swift in Sources */,
 				32DC973B25C2F17100947118 /* AddressCoordinator.swift in Sources */,
+				32DC97B325C319B700947118 /* PickerPinView.swift in Sources */,
 				32DC978625C2FFED00947118 /* UINavigationBar.swift in Sources */,
+				32DC979425C3085000947118 /* AddressDataProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,7 +618,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -503,7 +673,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -515,6 +685,7 @@
 		};
 		32DC971725C2EB9A00947118 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63B8E48EC5CECBF8FAC7D9B5 /* Pods-YandexMapTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -534,6 +705,7 @@
 		};
 		32DC971825C2EB9A00947118 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01E1607C8DFDA72F5DB94201 /* Pods-YandexMapTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

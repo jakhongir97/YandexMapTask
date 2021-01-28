@@ -11,5 +11,7 @@ enum AssetsImage: String {
     case address
     case map
     case profile
+    case voice
+    case myLocation
 }
 

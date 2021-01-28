@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -17,8 +18,24 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MapView" customModule="YandexMapTask" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nvz-ac-t8R" customClass="YMKMapView">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Nvz-ac-t8R" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1Rn-hu-Qex"/>
+                <constraint firstAttribute="bottom" secondItem="Nvz-ac-t8R" secondAttribute="bottom" id="Wgb-Ht-VJh"/>
+                <constraint firstItem="Nvz-ac-t8R" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="XYN-dn-rSO"/>
+                <constraint firstAttribute="trailing" secondItem="Nvz-ac-t8R" secondAttribute="trailing" id="jr4-ZB-c95"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="mapView" destination="Nvz-ac-t8R" id="NX5-DH-oCy"/>
+            </connections>
             <point key="canvasLocation" x="-203" y="139"/>
         </view>
     </objects>

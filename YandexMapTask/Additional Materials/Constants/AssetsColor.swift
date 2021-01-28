@@ -11,4 +11,6 @@ enum AssetsColor: String {
     case myMainBackground
     case mySecondBackground
     case myBlack
+    case myGray
+    case myGrayBackground
 }

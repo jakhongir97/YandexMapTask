@@ -17,6 +17,7 @@ class AddressViewController: UIViewController, ViewSpecificController, AlertView
     internal let viewModel = AddressViewModel()
     
     // MARK: - Data Providers
+    private var addressDataProvider: AddressDataProvider?
 
     // MARK: - Attributes
     override var prefersStatusBarHidden: Bool { return false }
@@ -51,6 +52,10 @@ extension AddressViewController {
         navigationItem.title = "Мои адреса"
         navigationController?.navigationBar.opacityNavBar()
         viewModel.delegate = self
+        
+        let addressDataProvider = AddressDataProvider(viewController: self)
+        addressDataProvider.collectionView = view().collectionView
+        self.addressDataProvider = addressDataProvider
     }
 }
 

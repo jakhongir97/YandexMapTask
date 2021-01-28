@@ -16,6 +16,9 @@ class MapViewController: UIViewController, ViewSpecificController, AlertViewCont
     internal var coordinator: MapCoordinator?
     internal let viewModel = MapViewModel()
     
+    lazy var searchView = SearchView.fromNib()
+    lazy var pickerPinView = PickerPinView.fromNib()
+    
     // MARK: - Data Providers
 
     // MARK: - Attributes
@@ -27,6 +30,9 @@ class MapViewController: UIViewController, ViewSpecificController, AlertViewCont
     override func viewDidLoad() {
         super.viewDidLoad()
         appearanceSettings()
+        setupSearchView()
+        setupMyLocationButton()
+        setupPickerPinView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -51,4 +57,50 @@ extension MapViewController {
     private func appearanceSettings() {
         viewModel.delegate = self
     }
+}
+
+// MARK: - Constraints
+extension MapViewController {
+    
+    func setupSearchView() {
+        view().addSubview(searchView)
+        
+        searchView.snp.makeConstraints { (make) in
+            make.top.equalTo(view().safeAreaLayoutGuide.snp.topMargin).inset(20)
+            make.centerX.equalToSuperview()
+        }
+    }
+    
+    func setupMyLocationButton() {
+        view().addSubview(view().myLocationButton)
+        
+        view().myLocationButton.snp.makeConstraints { (make) in
+            make.width.equalTo(52)
+            make.height.equalTo(52)
+            make.right.equalToSuperview().offset(-20)
+            make.bottom.equalToSuperview().offset(-20)
+        }
+    }
+    
+    func setupPickerPinView() {
+        view().addSubview(pickerPinView)
+        
+        pickerPinView.snp.makeConstraints { (make) in
+            make.centerX.equalToSuperview()
+            make.centerY.equalToSuperview().offset(-pickerPinView.frame.height/2)
+        }
+        
+        view().myLocationButton.addTarget(self, action: #selector(myLocationButtonAction(sender:)), for: .touchUpInside)
+    }
+}
+
+// MARK: - Functions
+extension MapViewController {
+    
+    @objc func myLocationButtonAction(sender: UIButton) {
+        sender.showAnimation { [weak self] in
+            
+        }
+    }
+    
 }

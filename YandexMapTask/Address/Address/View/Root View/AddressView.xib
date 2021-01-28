@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -17,8 +18,30 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AddressView" customModule="YandexMapTask" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="n0e-Wm-2aU">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="16" minimumInteritemSpacing="16" id="xms-PS-YJN">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="16" maxX="0.0" maxY="16"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="n0e-Wm-2aU" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="8u9-sY-x6G"/>
+                <constraint firstItem="n0e-Wm-2aU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="VUr-iD-PUa"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="n0e-Wm-2aU" secondAttribute="bottom" id="ccx-eb-znT"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="n0e-Wm-2aU" secondAttribute="trailing" id="fGd-6b-dgI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="collectionView" destination="n0e-Wm-2aU" id="cid-nJ-CUc"/>
+            </connections>
             <point key="canvasLocation" x="-203" y="139"/>
         </view>
     </objects>
