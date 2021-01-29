@@ -15,6 +15,7 @@ class AddressViewController: UIViewController, ViewSpecificController, AlertView
     // MARK: - Services
     internal var coordinator: AddressCoordinator?
     internal let viewModel = AddressViewModel()
+    private let coreDataController = CoreDataController(persistenceManager: .shared)
     
     // MARK: - Data Providers
     private var addressDataProvider: AddressDataProvider?
@@ -32,6 +33,7 @@ class AddressViewController: UIViewController, ViewSpecificController, AlertView
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        updateData()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -57,6 +59,18 @@ extension AddressViewController {
         addressDataProvider.collectionView = view().collectionView
         self.addressDataProvider = addressDataProvider
     }
+    
+    func updateData() {
+        let offlineSearches = coreDataController.allOfflineSearches()
+        let items = offlineSearches.map { Search(title: $0.name, address: $0.address, distance: "", uri: $0.uri) }
+        addressDataProvider?.items = items
+    }
+    
+    func removeData(uri: String) {
+        coreDataController.clearOfflineSearch(uri: uri)
+        updateData()
+    }
+    
 }
 
 

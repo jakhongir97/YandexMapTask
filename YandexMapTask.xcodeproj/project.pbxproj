@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		323B659625C40B1E002FC926 /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323B659525C40B1E002FC926 /* SearchService.swift */; };
+		323B659A25C40C9E002FC926 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323B659925C40C9E002FC926 /* Search.swift */; };
+		323B659F25C41E40002FC926 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323B659E25C41E40002FC926 /* DetailViewController.swift */; };
+		323B65A325C41E4A002FC926 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323B65A225C41E49002FC926 /* DetailView.swift */; };
+		323B65A625C41E52002FC926 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 323B65A525C41E52002FC926 /* DetailView.xib */; };
+		323B65A925C42064002FC926 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323B65A825C42064002FC926 /* UIButton.swift */; };
+		323B65AC25C42B82002FC926 /* PersistManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323B65AB25C42B82002FC926 /* PersistManager.swift */; };
+		323B65B025C42BBF002FC926 /* CoreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323B65AF25C42BBF002FC926 /* CoreDataController.swift */; };
 		32DC970325C2EB9900947118 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC970225C2EB9900947118 /* AppDelegate.swift */; };
 		32DC970525C2EB9900947118 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC970425C2EB9900947118 /* SceneDelegate.swift */; };
 		32DC970725C2EB9900947118 /* AddessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC970625C2EB9900947118 /* AddessViewController.swift */; };
@@ -48,11 +56,27 @@
 		32DC97AF25C3130500947118 /* UISearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC97AE25C3130500947118 /* UISearchBar.swift */; };
 		32DC97B325C319B700947118 /* PickerPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC97B225C319B700947118 /* PickerPinView.swift */; };
 		32DC97B725C319C200947118 /* PickerPinView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32DC97B625C319C200947118 /* PickerPinView.xib */; };
+		32DC97BB25C3F09F00947118 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC97BA25C3F09F00947118 /* UIViewController.swift */; };
+		32DC97C225C3F18600947118 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC97C125C3F18600947118 /* SearchViewModel.swift */; };
+		32DC97C525C3F19B00947118 /* SuggestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC97C425C3F19B00947118 /* SuggestViewController.swift */; };
+		32DC97CA25C3F1B900947118 /* SuggestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC97C925C3F1B900947118 /* SuggestView.swift */; };
+		32DC97CE25C3F1C600947118 /* SuggestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32DC97CD25C3F1C600947118 /* SuggestView.xib */; };
+		32DC97D825C3F28300947118 /* SuggestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC97D625C3F28300947118 /* SuggestTableViewCell.swift */; };
+		32DC97D925C3F28300947118 /* SuggestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32DC97D725C3F28300947118 /* SuggestTableViewCell.xib */; };
+		32DC97DC25C3F32700947118 /* SuggestDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC97DB25C3F32700947118 /* SuggestDataProvider.swift */; };
 		5488A09C714394A4ABF3AE32 /* Pods_YandexMapTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD6262F9749B37BFA97BC49 /* Pods_YandexMapTask.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		01E1607C8DFDA72F5DB94201 /* Pods-YandexMapTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YandexMapTask.release.xcconfig"; path = "Target Support Files/Pods-YandexMapTask/Pods-YandexMapTask.release.xcconfig"; sourceTree = "<group>"; };
+		323B659525C40B1E002FC926 /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
+		323B659925C40C9E002FC926 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		323B659E25C41E40002FC926 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		323B65A225C41E49002FC926 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		323B65A525C41E52002FC926 /* DetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
+		323B65A825C42064002FC926 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		323B65AB25C42B82002FC926 /* PersistManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistManager.swift; sourceTree = "<group>"; };
+		323B65AF25C42BBF002FC926 /* CoreDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataController.swift; sourceTree = "<group>"; };
 		32DC96FF25C2EB9900947118 /* YandexMapTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YandexMapTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32DC970225C2EB9900947118 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32DC970425C2EB9900947118 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +120,14 @@
 		32DC97AE25C3130500947118 /* UISearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISearchBar.swift; sourceTree = "<group>"; };
 		32DC97B225C319B700947118 /* PickerPinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerPinView.swift; sourceTree = "<group>"; };
 		32DC97B625C319C200947118 /* PickerPinView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerPinView.xib; sourceTree = "<group>"; };
+		32DC97BA25C3F09F00947118 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		32DC97C125C3F18600947118 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		32DC97C425C3F19B00947118 /* SuggestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestViewController.swift; sourceTree = "<group>"; };
+		32DC97C925C3F1B900947118 /* SuggestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestView.swift; sourceTree = "<group>"; };
+		32DC97CD25C3F1C600947118 /* SuggestView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuggestView.xib; sourceTree = "<group>"; };
+		32DC97D625C3F28300947118 /* SuggestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestTableViewCell.swift; sourceTree = "<group>"; };
+		32DC97D725C3F28300947118 /* SuggestTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuggestTableViewCell.xib; sourceTree = "<group>"; };
+		32DC97DB25C3F32700947118 /* SuggestDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestDataProvider.swift; sourceTree = "<group>"; };
 		63B8E48EC5CECBF8FAC7D9B5 /* Pods-YandexMapTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YandexMapTask.debug.xcconfig"; path = "Target Support Files/Pods-YandexMapTask/Pods-YandexMapTask.debug.xcconfig"; sourceTree = "<group>"; };
 		BDD6262F9749B37BFA97BC49 /* Pods_YandexMapTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YandexMapTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -120,6 +152,49 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		32139D2E25C4304A00C4D414 /* Custom UI */ = {
+			isa = PBXGroup;
+			children = (
+				32DC975725C2F69F00947118 /* CustomView.swift */,
+			);
+			path = "Custom UI";
+			sourceTree = "<group>";
+		};
+		323B659825C40C8F002FC926 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				323B659925C40C9E002FC926 /* Search.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		323B659C25C41E1A002FC926 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				323B659E25C41E40002FC926 /* DetailViewController.swift */,
+				323B659D25C41E32002FC926 /* View */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		323B659D25C41E32002FC926 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				323B65A225C41E49002FC926 /* DetailView.swift */,
+				323B65A525C41E52002FC926 /* DetailView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		323B65AE25C42BA9002FC926 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				323B65AB25C42B82002FC926 /* PersistManager.swift */,
+				323B65AF25C42BBF002FC926 /* CoreDataController.swift */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
 		32DC96F625C2EB9900947118 = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +216,7 @@
 		32DC970125C2EB9900947118 /* YandexMapTask */ = {
 			isa = PBXGroup;
 			children = (
+				323B659825C40C8F002FC926 /* Models */,
 				32DC972225C2EF6700947118 /* Additional Materials */,
 				32DC973325C2F06500947118 /* TabBarController */,
 				32DC973925C2F10000947118 /* Address */,
@@ -184,6 +260,8 @@
 				32DC978525C2FFED00947118 /* UINavigationBar.swift */,
 				32DC979F25C30AF000947118 /* UIView.swift */,
 				32DC97AE25C3130500947118 /* UISearchBar.swift */,
+				32DC97BA25C3F09F00947118 /* UIViewController.swift */,
+				323B65A825C42064002FC926 /* UIButton.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -202,6 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				32DC971F25C2EF5200947118 /* TabBarController.swift */,
+				323B659525C40B1E002FC926 /* SearchService.swift */,
 			);
 			path = TabBarController;
 			sourceTree = "<group>";
@@ -231,6 +310,8 @@
 			children = (
 				32DC974025C2F1A200947118 /* MapCoordinator.swift */,
 				32DC976525C2FBDB00947118 /* Map */,
+				32DC97BD25C3F12C00947118 /* Suggest */,
+				323B659C25C41E1A002FC926 /* Detail */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -267,7 +348,8 @@
 		32DC975625C2F68F00947118 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				32DC975725C2F69F00947118 /* CustomView.swift */,
+				32139D2E25C4304A00C4D414 /* Custom UI */,
+				323B65AE25C42BA9002FC926 /* Core Data */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -371,6 +453,60 @@
 			path = "PickerPin View";
 			sourceTree = "<group>";
 		};
+		32DC97BD25C3F12C00947118 /* Suggest */ = {
+			isa = PBXGroup;
+			children = (
+				32DC97BF25C3F15000947118 /* Data Provider */,
+				32DC97BE25C3F14B00947118 /* View */,
+				32DC97C025C3F16800947118 /* View Model */,
+			);
+			path = Suggest;
+			sourceTree = "<group>";
+		};
+		32DC97BE25C3F14B00947118 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				32DC97C425C3F19B00947118 /* SuggestViewController.swift */,
+				32DC97C725C3F1A300947118 /* Root View */,
+				32DC97C825C3F1AA00947118 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		32DC97BF25C3F15000947118 /* Data Provider */ = {
+			isa = PBXGroup;
+			children = (
+				32DC97DB25C3F32700947118 /* SuggestDataProvider.swift */,
+			);
+			path = "Data Provider";
+			sourceTree = "<group>";
+		};
+		32DC97C025C3F16800947118 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				32DC97C125C3F18600947118 /* SearchViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		32DC97C725C3F1A300947118 /* Root View */ = {
+			isa = PBXGroup;
+			children = (
+				32DC97C925C3F1B900947118 /* SuggestView.swift */,
+				32DC97CD25C3F1C600947118 /* SuggestView.xib */,
+			);
+			path = "Root View";
+			sourceTree = "<group>";
+		};
+		32DC97C825C3F1AA00947118 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				32DC97D625C3F28300947118 /* SuggestTableViewCell.swift */,
+				32DC97D725C3F28300947118 /* SuggestTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		7DF773D598E1F4FDE940AC23 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -445,9 +581,12 @@
 				32DC97B725C319C200947118 /* PickerPinView.xib in Resources */,
 				32DC977F25C2FD0A00947118 /* ProfileView.xib in Resources */,
 				32DC977025C2FC2B00947118 /* MapView.xib in Resources */,
+				32DC97CE25C3F1C600947118 /* SuggestView.xib in Resources */,
 				32DC979A25C308B100947118 /* AddressCollectionViewCell.xib in Resources */,
 				32DC971225C2EB9A00947118 /* LaunchScreen.storyboard in Resources */,
 				32DC970F25C2EB9A00947118 /* Assets.xcassets in Resources */,
+				32DC97D925C3F28300947118 /* SuggestTableViewCell.xib in Resources */,
+				323B65A625C41E52002FC926 /* DetailView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,13 +657,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				32DC970D25C2EB9900947118 /* YandexMapTask.xcdatamodeld in Sources */,
+				32DC97C225C3F18600947118 /* SearchViewModel.swift in Sources */,
 				32DC972525C2EF9500947118 /* UIColor.swift in Sources */,
 				32DC974925C2F59E00947118 /* ViewSpecificController.swift in Sources */,
+				32DC97DC25C3F32700947118 /* SuggestDataProvider.swift in Sources */,
 				32DC976925C2FC1700947118 /* MapViewController.swift in Sources */,
 				32DC97A025C30AF000947118 /* UIView.swift in Sources */,
 				32DC973725C2F0E300947118 /* Coordinator.swift in Sources */,
 				32DC972E25C2EFFB00947118 /* AssetsImage.swift in Sources */,
 				32DC97A325C30DFE00947118 /* YandexMap.swift in Sources */,
+				32DC97BB25C3F09F00947118 /* UIViewController.swift in Sources */,
 				32DC979925C308B100947118 /* AddressCollectionViewCell.swift in Sources */,
 				32DC970725C2EB9900947118 /* AddessViewController.swift in Sources */,
 				32DC976D25C2FC2300947118 /* MapView.swift in Sources */,
@@ -533,21 +675,31 @@
 				32DC973125C2F02D00947118 /* UIImage.swift in Sources */,
 				32DC975825C2F69F00947118 /* CustomView.swift in Sources */,
 				32DC97A725C3101300947118 /* SearchView.swift in Sources */,
+				323B65A925C42064002FC926 /* UIButton.swift in Sources */,
 				32DC976325C2F9DF00947118 /* UITabBarItem.swift in Sources */,
 				32DC974425C2F1B200947118 /* ProfileCoordinator.swift in Sources */,
 				32DC975C25C2F78600947118 /* AddressViewModel.swift in Sources */,
 				32DC977C25C2FD0100947118 /* ProfileView.swift in Sources */,
+				323B659A25C40C9E002FC926 /* Search.swift in Sources */,
 				32DC972A25C2EFC400947118 /* AssetsColor.swift in Sources */,
+				323B65A325C41E4A002FC926 /* DetailView.swift in Sources */,
+				32DC97CA25C3F1B900947118 /* SuggestView.swift in Sources */,
 				32DC97AF25C3130500947118 /* UISearchBar.swift in Sources */,
+				323B659F25C41E40002FC926 /* DetailViewController.swift in Sources */,
 				32DC974125C2F1A200947118 /* MapCoordinator.swift in Sources */,
 				32DC979D25C30ABD00947118 /* ReusableView.swift in Sources */,
+				323B65B025C42BBF002FC926 /* CoreDataController.swift in Sources */,
 				32DC977325C2FC3600947118 /* MapViewModel.swift in Sources */,
 				32DC970525C2EB9900947118 /* SceneDelegate.swift in Sources */,
+				32DC97D825C3F28300947118 /* SuggestTableViewCell.swift in Sources */,
 				32DC975125C2F65C00947118 /* AddressView.swift in Sources */,
 				32DC978225C2FD1B00947118 /* ProfileViewController.swift in Sources */,
+				32DC97C525C3F19B00947118 /* SuggestViewController.swift in Sources */,
+				323B65AC25C42B82002FC926 /* PersistManager.swift in Sources */,
 				32DC974C25C2F5FD00947118 /* AlertViewController.swift in Sources */,
 				32DC973B25C2F17100947118 /* AddressCoordinator.swift in Sources */,
 				32DC97B325C319B700947118 /* PickerPinView.swift in Sources */,
+				323B659625C40B1E002FC926 /* SearchService.swift in Sources */,
 				32DC978625C2FFED00947118 /* UINavigationBar.swift in Sources */,
 				32DC979425C3085000947118 /* AddressDataProvider.swift in Sources */,
 			);

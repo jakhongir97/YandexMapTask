@@ -13,4 +13,6 @@ enum AssetsColor: String {
     case myBlack
     case myGray
     case myGrayBackground
+    case myGreen
+    case myBlue
 }

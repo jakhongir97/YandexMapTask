@@ -13,5 +13,6 @@ enum AssetsImage: String {
     case profile
     case voice
     case myLocation
+    case circlePin
 }
 
