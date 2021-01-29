@@ -14,7 +14,6 @@ class AddressViewController: UIViewController, ViewSpecificController, AlertView
     
     // MARK: - Services
     internal var coordinator: AddressCoordinator?
-    internal let viewModel = AddressViewModel()
     private let coreDataController = CoreDataController(persistenceManager: .shared)
     
     // MARK: - Data Providers
@@ -36,17 +35,6 @@ class AddressViewController: UIViewController, ViewSpecificController, AlertView
         navigationController?.setNavigationBarHidden(false, animated: animated)
         updateData()
     }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-    }
-}
-
-// MARK: - Networking
-extension AddressViewController : AddressViewModelProtocol {
-    func didFinishFetch(data: Data) {
-        
-    }
 }
 
 // MARK: - Other funcs
@@ -54,8 +42,10 @@ extension AddressViewController {
     private func appearanceSettings() {
         navigationItem.title = "Мои адреса"
         navigationController?.navigationBar.opacityNavBar()
-        viewModel.delegate = self
-        
+        setupDataProvider()
+    }
+    
+    private func setupDataProvider() {
         let addressDataProvider = AddressDataProvider(viewController: self)
         addressDataProvider.collectionView = view().collectionView
         self.addressDataProvider = addressDataProvider

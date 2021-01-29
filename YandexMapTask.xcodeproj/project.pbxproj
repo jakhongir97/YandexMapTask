@@ -36,12 +36,10 @@
 		32DC975125C2F65C00947118 /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC975025C2F65C00947118 /* AddressView.swift */; };
 		32DC975425C2F66800947118 /* AddressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32DC975325C2F66800947118 /* AddressView.xib */; };
 		32DC975825C2F69F00947118 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC975725C2F69F00947118 /* CustomView.swift */; };
-		32DC975C25C2F78600947118 /* AddressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC975B25C2F78600947118 /* AddressViewModel.swift */; };
 		32DC976325C2F9DF00947118 /* UITabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC976225C2F9DF00947118 /* UITabBarItem.swift */; };
 		32DC976925C2FC1700947118 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC976825C2FC1700947118 /* MapViewController.swift */; };
 		32DC976D25C2FC2300947118 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC976C25C2FC2300947118 /* MapView.swift */; };
 		32DC977025C2FC2B00947118 /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32DC976F25C2FC2B00947118 /* MapView.xib */; };
-		32DC977325C2FC3600947118 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC977225C2FC3600947118 /* MapViewModel.swift */; };
 		32DC977C25C2FD0100947118 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC977B25C2FD0100947118 /* ProfileView.swift */; };
 		32DC977F25C2FD0A00947118 /* ProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32DC977E25C2FD0A00947118 /* ProfileView.xib */; };
 		32DC978225C2FD1B00947118 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC978125C2FD1B00947118 /* ProfileViewController.swift */; };
@@ -58,10 +56,6 @@
 		32DC97B325C319B700947118 /* PickerPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC97B225C319B700947118 /* PickerPinView.swift */; };
 		32DC97B725C319C200947118 /* PickerPinView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32DC97B625C319C200947118 /* PickerPinView.xib */; };
 		32DC97BB25C3F09F00947118 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC97BA25C3F09F00947118 /* UIViewController.swift */; };
-		32DC97C225C3F18600947118 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC97C125C3F18600947118 /* SearchViewModel.swift */; };
-		32DC97C525C3F19B00947118 /* SuggestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC97C425C3F19B00947118 /* SuggestViewController.swift */; };
-		32DC97CA25C3F1B900947118 /* SuggestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC97C925C3F1B900947118 /* SuggestView.swift */; };
-		32DC97CE25C3F1C600947118 /* SuggestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32DC97CD25C3F1C600947118 /* SuggestView.xib */; };
 		32DC97D825C3F28300947118 /* SuggestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC97D625C3F28300947118 /* SuggestTableViewCell.swift */; };
 		32DC97D925C3F28300947118 /* SuggestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32DC97D725C3F28300947118 /* SuggestTableViewCell.xib */; };
 		32DC97DC25C3F32700947118 /* SuggestDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC97DB25C3F32700947118 /* SuggestDataProvider.swift */; };
@@ -101,12 +95,10 @@
 		32DC975025C2F65C00947118 /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
 		32DC975325C2F66800947118 /* AddressView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressView.xib; sourceTree = "<group>"; };
 		32DC975725C2F69F00947118 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
-		32DC975B25C2F78600947118 /* AddressViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressViewModel.swift; sourceTree = "<group>"; };
 		32DC976225C2F9DF00947118 /* UITabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarItem.swift; sourceTree = "<group>"; };
 		32DC976825C2FC1700947118 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		32DC976C25C2FC2300947118 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		32DC976F25C2FC2B00947118 /* MapView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
-		32DC977225C2FC3600947118 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		32DC977B25C2FD0100947118 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		32DC977E25C2FD0A00947118 /* ProfileView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileView.xib; sourceTree = "<group>"; };
 		32DC978125C2FD1B00947118 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -123,10 +115,6 @@
 		32DC97B225C319B700947118 /* PickerPinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerPinView.swift; sourceTree = "<group>"; };
 		32DC97B625C319C200947118 /* PickerPinView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerPinView.xib; sourceTree = "<group>"; };
 		32DC97BA25C3F09F00947118 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
-		32DC97C125C3F18600947118 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
-		32DC97C425C3F19B00947118 /* SuggestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestViewController.swift; sourceTree = "<group>"; };
-		32DC97C925C3F1B900947118 /* SuggestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestView.swift; sourceTree = "<group>"; };
-		32DC97CD25C3F1C600947118 /* SuggestView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuggestView.xib; sourceTree = "<group>"; };
 		32DC97D625C3F28300947118 /* SuggestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestTableViewCell.swift; sourceTree = "<group>"; };
 		32DC97D725C3F28300947118 /* SuggestTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuggestTableViewCell.xib; sourceTree = "<group>"; };
 		32DC97DB25C3F32700947118 /* SuggestDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestDataProvider.swift; sourceTree = "<group>"; };
@@ -313,7 +301,6 @@
 			children = (
 				32DC974025C2F1A200947118 /* MapCoordinator.swift */,
 				32DC976525C2FBDB00947118 /* Map */,
-				32DC97BD25C3F12C00947118 /* Suggest */,
 				323B659C25C41E1A002FC926 /* Detail */,
 			);
 			path = Map;
@@ -333,7 +320,6 @@
 			children = (
 				32DC979225C3082F00947118 /* Data Provider */,
 				32DC974F25C2F65100947118 /* View */,
-				32DC975A25C2F76300947118 /* View Model */,
 			);
 			path = Address;
 			sourceTree = "<group>";
@@ -357,22 +343,15 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		32DC975A25C2F76300947118 /* View Model */ = {
-			isa = PBXGroup;
-			children = (
-				32DC975B25C2F78600947118 /* AddressViewModel.swift */,
-			);
-			path = "View Model";
-			sourceTree = "<group>";
-		};
 		32DC976525C2FBDB00947118 /* Map */ = {
 			isa = PBXGroup;
 			children = (
 				32DC976825C2FC1700947118 /* MapViewController.swift */,
+				32DC97BF25C3F15000947118 /* Data Provider */,
 				32DC976625C2FBFA00947118 /* Map View */,
 				32DC97A525C30FEF00947118 /* Search View */,
+				32DC97C825C3F1AA00947118 /* Cell */,
 				32DC97B125C3197800947118 /* PickerPin View */,
-				32DC976725C2FBFE00947118 /* View Model */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -384,14 +363,6 @@
 				32DC976F25C2FC2B00947118 /* MapView.xib */,
 			);
 			path = "Map View";
-			sourceTree = "<group>";
-		};
-		32DC976725C2FBFE00947118 /* View Model */ = {
-			isa = PBXGroup;
-			children = (
-				32DC977225C2FC3600947118 /* MapViewModel.swift */,
-			);
-			path = "View Model";
 			sourceTree = "<group>";
 		};
 		32DC977525C2FCD400947118 /* Profile */ = {
@@ -456,49 +427,12 @@
 			path = "PickerPin View";
 			sourceTree = "<group>";
 		};
-		32DC97BD25C3F12C00947118 /* Suggest */ = {
-			isa = PBXGroup;
-			children = (
-				32DC97BF25C3F15000947118 /* Data Provider */,
-				32DC97BE25C3F14B00947118 /* View */,
-				32DC97C025C3F16800947118 /* View Model */,
-			);
-			path = Suggest;
-			sourceTree = "<group>";
-		};
-		32DC97BE25C3F14B00947118 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				32DC97C425C3F19B00947118 /* SuggestViewController.swift */,
-				32DC97C725C3F1A300947118 /* Root View */,
-				32DC97C825C3F1AA00947118 /* Cell */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		32DC97BF25C3F15000947118 /* Data Provider */ = {
 			isa = PBXGroup;
 			children = (
 				32DC97DB25C3F32700947118 /* SuggestDataProvider.swift */,
 			);
 			path = "Data Provider";
-			sourceTree = "<group>";
-		};
-		32DC97C025C3F16800947118 /* View Model */ = {
-			isa = PBXGroup;
-			children = (
-				32DC97C125C3F18600947118 /* SearchViewModel.swift */,
-			);
-			path = "View Model";
-			sourceTree = "<group>";
-		};
-		32DC97C725C3F1A300947118 /* Root View */ = {
-			isa = PBXGroup;
-			children = (
-				32DC97C925C3F1B900947118 /* SuggestView.swift */,
-				32DC97CD25C3F1C600947118 /* SuggestView.xib */,
-			);
-			path = "Root View";
 			sourceTree = "<group>";
 		};
 		32DC97C825C3F1AA00947118 /* Cell */ = {
@@ -584,7 +518,6 @@
 				32DC97B725C319C200947118 /* PickerPinView.xib in Resources */,
 				32DC977F25C2FD0A00947118 /* ProfileView.xib in Resources */,
 				32DC977025C2FC2B00947118 /* MapView.xib in Resources */,
-				32DC97CE25C3F1C600947118 /* SuggestView.xib in Resources */,
 				32DC979A25C308B100947118 /* AddressCollectionViewCell.xib in Resources */,
 				32DC971225C2EB9A00947118 /* LaunchScreen.storyboard in Resources */,
 				32DC970F25C2EB9A00947118 /* Assets.xcassets in Resources */,
@@ -660,7 +593,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				32DC970D25C2EB9900947118 /* YandexMapTask.xcdatamodeld in Sources */,
-				32DC97C225C3F18600947118 /* SearchViewModel.swift in Sources */,
 				32DC972525C2EF9500947118 /* UIColor.swift in Sources */,
 				32DC974925C2F59E00947118 /* ViewSpecificController.swift in Sources */,
 				32DC97DC25C3F32700947118 /* SuggestDataProvider.swift in Sources */,
@@ -682,23 +614,19 @@
 				323B65A925C42064002FC926 /* UIButton.swift in Sources */,
 				32DC976325C2F9DF00947118 /* UITabBarItem.swift in Sources */,
 				32DC974425C2F1B200947118 /* ProfileCoordinator.swift in Sources */,
-				32DC975C25C2F78600947118 /* AddressViewModel.swift in Sources */,
 				32DC977C25C2FD0100947118 /* ProfileView.swift in Sources */,
 				323B659A25C40C9E002FC926 /* Search.swift in Sources */,
 				32DC972A25C2EFC400947118 /* AssetsColor.swift in Sources */,
 				323B65A325C41E4A002FC926 /* DetailView.swift in Sources */,
-				32DC97CA25C3F1B900947118 /* SuggestView.swift in Sources */,
 				32DC97AF25C3130500947118 /* UISearchBar.swift in Sources */,
 				323B659F25C41E40002FC926 /* DetailViewController.swift in Sources */,
 				32DC974125C2F1A200947118 /* MapCoordinator.swift in Sources */,
 				32DC979D25C30ABD00947118 /* ReusableView.swift in Sources */,
 				323B65B025C42BBF002FC926 /* CoreDataController.swift in Sources */,
-				32DC977325C2FC3600947118 /* MapViewModel.swift in Sources */,
 				32DC970525C2EB9900947118 /* SceneDelegate.swift in Sources */,
 				32DC97D825C3F28300947118 /* SuggestTableViewCell.swift in Sources */,
 				32DC975125C2F65C00947118 /* AddressView.swift in Sources */,
 				32DC978225C2FD1B00947118 /* ProfileViewController.swift in Sources */,
-				32DC97C525C3F19B00947118 /* SuggestViewController.swift in Sources */,
 				323B65AC25C42B82002FC926 /* PersistManager.swift in Sources */,
 				32DC974C25C2F5FD00947118 /* AlertViewController.swift in Sources */,
 				32DC973B25C2F17100947118 /* AddressCoordinator.swift in Sources */,

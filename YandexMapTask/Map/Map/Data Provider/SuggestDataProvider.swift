@@ -50,7 +50,7 @@ final class SuggestDataProvider: NSObject, UITableViewDataSource, UITableViewDel
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let vc = viewController as? SuggestViewController else { return }
+        guard let vc = viewController as? MapViewController else { return }
         guard let uri = items[indexPath.row].uri else { return }
         vc.getPoint(uri: uri)
     }

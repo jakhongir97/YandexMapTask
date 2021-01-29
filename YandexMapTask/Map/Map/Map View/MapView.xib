@@ -23,18 +23,40 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uLo-LX-6cs">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oNN-hC-WzS">
+                            <rect key="frame" x="0.0" y="120" width="414" height="776"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="oNN-hC-WzS" secondAttribute="trailing" id="Ica-RY-prQ"/>
+                        <constraint firstItem="oNN-hC-WzS" firstAttribute="top" secondItem="uLo-LX-6cs" secondAttribute="top" constant="120" id="Kru-c7-T6E"/>
+                        <constraint firstAttribute="bottom" secondItem="oNN-hC-WzS" secondAttribute="bottom" id="ZMy-kg-nXS"/>
+                        <constraint firstItem="oNN-hC-WzS" firstAttribute="leading" secondItem="uLo-LX-6cs" secondAttribute="leading" id="f2h-eG-tFC"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="Nvz-ac-t8R" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1Rn-hu-Qex"/>
+                <constraint firstItem="uLo-LX-6cs" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="7WU-5p-NQM"/>
+                <constraint firstAttribute="bottom" secondItem="uLo-LX-6cs" secondAttribute="bottom" id="FUh-9v-r7d"/>
+                <constraint firstItem="uLo-LX-6cs" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Hoi-mL-VfF"/>
                 <constraint firstAttribute="bottom" secondItem="Nvz-ac-t8R" secondAttribute="bottom" id="Wgb-Ht-VJh"/>
                 <constraint firstItem="Nvz-ac-t8R" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="XYN-dn-rSO"/>
+                <constraint firstItem="uLo-LX-6cs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bnI-BU-IGW"/>
                 <constraint firstAttribute="trailing" secondItem="Nvz-ac-t8R" secondAttribute="trailing" id="jr4-ZB-c95"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="backView" destination="uLo-LX-6cs" id="hfi-8N-ask"/>
                 <outlet property="mapView" destination="Nvz-ac-t8R" id="NX5-DH-oCy"/>
+                <outlet property="tableView" destination="oNN-hC-WzS" id="SYN-zH-znj"/>
             </connections>
             <point key="canvasLocation" x="-203" y="139"/>
         </view>
