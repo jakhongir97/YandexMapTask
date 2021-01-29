@@ -20,6 +20,27 @@ final class MapView: CustomView {
         button.backgroundColor = UIColor.appColor(.mySecondBackground)
         button.layer.cornerRadius = 26
         button.layer.cornerCurve = .continuous
+        button.tintColor = UIColor.appColor(.myBlack)
+        return button
+    }()
+    
+    lazy var infoButton : UIButton = {
+        let button = UIButton()
+        button.setImage(UIImage(systemName: "info"), for: .normal)
+        button.backgroundColor = UIColor.appColor(.mySecondBackground)
+        button.layer.cornerRadius = 26
+        button.layer.cornerCurve = .continuous
+        button.tintColor = UIColor.appColor(.myBlack)
+        return button
+    }()
+    
+    lazy var backButton : UIButton = {
+        let button = UIButton()
+        button.setImage(UIImage(systemName: "arrow.backward"), for: .normal)
+        button.backgroundColor = UIColor.appColor(.mySecondBackground)
+        button.layer.cornerRadius = 26
+        button.layer.cornerCurve = .continuous
+        button.tintColor = UIColor.appColor(.myBlack)
         return button
     }()
     

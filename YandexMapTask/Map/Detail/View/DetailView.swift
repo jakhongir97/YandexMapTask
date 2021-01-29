@@ -12,5 +12,6 @@ final class DetailView: UIView {
     // MARK: - Outlets
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var button: UIButton!
     
 }

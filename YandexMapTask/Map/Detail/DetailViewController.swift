@@ -23,6 +23,17 @@ class DetailViewController: UIViewController, ViewSpecificController, AlertViewC
 
     // MARK: - Attributes
     override var prefersStatusBarHidden: Bool { return false }
+    internal var isPushed = false {
+        didSet {
+            if isPushed {
+                view().button.setTitle("Удалить адрес из избранного", for: .normal)
+                view().button.backgroundColor = UIColor.appColor(.myRed)
+            } else {
+                view().button.setTitle("Добавить адрес в избранное", for: .normal)
+                view().button.backgroundColor = UIColor.appColor(.myGreen)
+            }
+        }
+    }
     
     var uri : String?
     var object : YMKGeoObject? {
@@ -37,9 +48,16 @@ class DetailViewController: UIViewController, ViewSpecificController, AlertViewC
     // MARK: - Actions
     @IBAction func addButtonAction(_ sender: UIButton) {
         guard let object = object, let uri = uri else { return }
-        showAlertWithTextField(title: "", message: "Добавить адрес в избранное", placeholder: object.name ?? "") { name in
-            self.coreDataController.addOfflineSearch(uri: uri, name: name, address: object.descriptionText)
-            self.delegate?.close()
+        if isPushed {
+            showAlertWithTwoButtons(title: "", message: "Удалить адрес из избранного", firstButtonText: "Отмена", firstButtonAction: nil, secondButtonText: "Удалить") {
+                self.coreDataController.clearOfflineSearch(uri: uri)
+                self.delegate?.close()
+            }
+        } else {
+            showAlertWithTextField(title: "", message: "Добавить адрес в избранное", placeholder: object.name ?? "") { name in
+                self.coreDataController.addOfflineSearch(uri: uri, name: name, address: object.descriptionText)
+                self.delegate?.close()
+            }
         }
         
     }

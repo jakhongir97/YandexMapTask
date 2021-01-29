@@ -30,11 +30,13 @@ class MapViewController: UIViewController, ViewSpecificController, AlertViewCont
     internal var userLocationLayer : YMKUserLocationLayer?
     internal let searchManager = YMKSearch.sharedInstance().createSearchManager(with: .combined)
     internal var searchSession: YMKSearchSession?
+    internal var centerPoint: YMKPoint?
     
     // MARK: - Data Providers
 
     // MARK: - Attributes
     override var prefersStatusBarHidden: Bool { return false }
+    internal var isPushed = false
     
     // MARK: - Actions
     @objc func myLocationButtonAction(sender: UIButton) {
@@ -43,16 +45,37 @@ class MapViewController: UIViewController, ViewSpecificController, AlertViewCont
         }
     }
     
+    @objc func infoButtonAction(sender: UIButton) {
+        sender.showAnimation { }
+        guard let centerPoint = centerPoint else { return }
+        search(point: centerPoint)
+    }
+    
+    @objc func backButtonAction(sender: UIButton) {
+        sender.showAnimation {[weak self] in
+            self?.bottomFloatingPanelController.dismiss(animated: true)
+            self?.navigationController?.popViewController(animated: true)
+        }
+    }
+    
     // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        appearanceSettings()
-        setupSearchView()
-        setupMyLocationButton()
-        setupPickerPinView()
-        setupFloatingPanel()
-        setupBottomFloatingPanel()
-        setupMyCurrentLocation()
+        if isPushed {
+            appearanceSettings()
+            setupBackButton()
+            setupBottomFloatingPanel()
+        } else {
+            appearanceSettings()
+            setupSearchView()
+            setupMyLocationButton()
+            setupInfoButton()
+            setupPickerPinView()
+            setupFloatingPanel()
+            setupBottomFloatingPanel()
+            setupMyCurrentLocation()
+            setupMapViewListener()
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -79,6 +102,14 @@ extension MapViewController {
         searchView.searchBar.delegate = self
         closeKeyboardOnOutsideTap()
     }
+    
+    private func showDetailViewController(object: YMKGeoObject, uri: String) {
+        guard let vc = bottomFloatingPanelController.contentViewController as? DetailViewController else { return }
+        vc.isPushed = isPushed
+        vc.object = object
+        vc.uri = uri
+        present(bottomFloatingPanelController, animated: true)
+    }
 }
 
 // MARK: - SuggestViewControllerDelegate
@@ -87,10 +118,7 @@ extension MapViewController : SuggestViewControllerDelegate {
         floatingPanelController.dismiss(animated: true)
         guard let target = object.geometry.first?.point else { return }
         view().mapView.mapWindow.map.move(with: YMKCameraPosition(target: target, zoom: 16, azimuth: 0, tilt: 0), animationType: YMKAnimation(type: YMKAnimationType.smooth, duration: 0.2))
-        guard let vc = bottomFloatingPanelController.contentViewController as? DetailViewController else { return }
-        vc.object = object
-        vc.uri = uri
-        present(bottomFloatingPanelController, animated: true)
+        showDetailViewController(object: object, uri: uri)
     }
 }
 
@@ -99,6 +127,9 @@ extension MapViewController : DetailViewControllerDelegate {
     func close() {
         bottomFloatingPanelController.dismiss(animated: true)
         searchView.searchBar.resignFirstResponder()
+        if isPushed {
+            navigationController?.popViewController(animated: true)
+        }
     }
     
     
@@ -109,6 +140,8 @@ extension MapViewController: UISearchBarDelegate {
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
         UIView.animate(withDuration: 0.25) { [weak self] in
             guard let self = self else { return }
+//            let vc = SuggestViewController()
+//            self.present(vc, animated: true)
             self.present(self.floatingPanelController, animated: true)
         }
     }
@@ -140,6 +173,34 @@ extension MapViewController {
             make.right.equalToSuperview().offset(-20)
             make.bottom.equalToSuperview().offset(-20)
         }
+        
+        view().myLocationButton.addTarget(self, action: #selector(myLocationButtonAction(sender:)), for: .touchUpInside)
+    }
+    
+    func setupInfoButton() {
+        view().addSubview(view().infoButton)
+        
+        view().infoButton.snp.makeConstraints { (make) in
+            make.width.equalTo(52)
+            make.height.equalTo(52)
+            make.left.equalToSuperview().offset(20)
+            make.bottom.equalToSuperview().offset(-20)
+        }
+        
+        view().infoButton.addTarget(self, action: #selector(infoButtonAction(sender:)), for: .touchUpInside)
+    }
+    
+    func setupBackButton() {
+        view().addSubview(view().backButton)
+        
+        view().backButton.snp.makeConstraints { (make) in
+            make.width.equalTo(52)
+            make.height.equalTo(52)
+            make.left.equalToSuperview().offset(20)
+            make.top.equalTo(view().safeAreaLayoutGuide.snp.topMargin).inset(20)
+        }
+        
+        view().backButton.addTarget(self, action: #selector(backButtonAction(sender:)), for: .touchUpInside)
     }
     
     func setupPickerPinView() {
@@ -149,8 +210,6 @@ extension MapViewController {
             make.centerX.equalToSuperview()
             make.centerY.equalToSuperview().offset(-pickerPinView.frame.height/2)
         }
-        
-        view().myLocationButton.addTarget(self, action: #selector(myLocationButtonAction(sender:)), for: .touchUpInside)
     }
     
     private func setupFloatingPanel() {
@@ -253,11 +312,34 @@ extension MapViewController {
         searchSession = searchManager.submit(with: point, zoom: nil, searchOptions: YMKSearchOptions(), responseHandler: responseHandler)
     }
     
-    func onSearchResponse(_ response: YMKSearchResponse) {
-        guard let searchResult = response.collection.children.first else { return }
-        if let text = searchResult.obj?.name {
-            
+    func search(uri : String) {
+        let responseHandler = {(searchResponse: YMKSearchResponse?, error: Error?) -> Void in
+            if let response = searchResponse {
+                self.onSearchResponse(response)
+            } else {
+                self.onError(error!)
+            }
         }
+        
+        searchSession = searchManager.resolveURI(withUri: uri, searchOptions: YMKSearchOptions(), responseHandler: responseHandler)
+    }
+    
+    func onSearchResponse(_ response: YMKSearchResponse) {
+        guard let searchResult = response.collection.children.first, let object = searchResult.obj else { return }
+        guard let metadata = searchResult.obj?.metadataContainer.getItemOf(YMKUriObjectMetadata.self) as? YMKUriObjectMetadata, let uri = metadata.uris.first?.value else { return }
+        if isPushed {
+            getLocation(object: object, uri: uri)
+            guard let point = object.geometry.first?.point else { return }
+            drawPlaceMark(point: point)
+        } else {
+            showDetailViewController(object: object, uri: uri)
+        }
+    }
+    
+    func drawPlaceMark(point : YMKPoint) {
+        let mapObjects = view().mapView.mapWindow.map.mapObjects
+        let mark = mapObjects.addPlacemark(with: point)
+        mark.setIconWith(UIImage.appImage(.pin))
     }
 
     func onError(_ error: Error) {
@@ -323,4 +405,17 @@ extension MapViewController : YMKUserLocationObjectListener {
     
     func onObjectUpdated(with view: YMKUserLocationView, event: YMKObjectEvent) {}
 
+}
+
+// MARK: - MapKit Camera Position
+extension MapViewController : YMKMapCameraListener {
+    private func setupMapViewListener() {
+        view().mapView.mapWindow.map.addCameraListener(with: self)
+    }
+    
+    func onCameraPositionChanged(with map: YMKMap, cameraPosition: YMKCameraPosition, cameraUpdateReason: YMKCameraUpdateReason, finished: Bool) {
+        if finished {
+            self.centerPoint = cameraPosition.target
+        }
+    }
 }

@@ -23,4 +23,15 @@ final class AddressCoordinator: Coordinator {
         navigationController.pushViewController(vc, animated: false)
     }
     
+    internal func pushMapVC(uri: String) {
+        let vc = MapViewController()
+        let mapCoordinator = MapCoordinator(navigationController: navigationController)
+        vc.coordinator = mapCoordinator
+        vc.isPushed = true
+        navigationController.pushViewController(vc, animated: true) {
+            vc.search(uri: uri)
+        }
+        
+    }
+    
 }

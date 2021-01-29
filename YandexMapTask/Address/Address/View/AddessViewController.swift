@@ -33,6 +33,7 @@ class AddressViewController: UIViewController, ViewSpecificController, AlertView
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
         updateData()
     }
     

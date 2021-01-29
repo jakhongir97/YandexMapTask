@@ -17,7 +17,7 @@ final class MapCoordinator: Coordinator {
     
     internal func start() {
         let vc = MapViewController()
-        vc.tabBarItem = UITabBarItem(title: nil, image: UIImage.appImage(.map), tag: 0)
+        vc.tabBarItem = UITabBarItem(title: nil, image: UIImage.appImage(.map), tag: 1)
         vc.tabBarItem.setImageOnly()
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: false)

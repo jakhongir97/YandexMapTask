@@ -49,7 +49,9 @@ final class AddressDataProvider: NSObject, UICollectionViewDataSource, UICollect
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        guard let vc = self.viewController as? AddressViewController else { return }
+        guard let uri = items[indexPath.row].uri else { return }
+        vc.coordinator?.pushMapVC(uri: uri)
     }
     
     // MARK: - Context Menu

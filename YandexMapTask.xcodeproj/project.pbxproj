@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32139D3125C45DA900C4D414 /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32139D3025C45DA900C4D414 /* UINavigationController.swift */; };
 		323B659625C40B1E002FC926 /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323B659525C40B1E002FC926 /* SearchService.swift */; };
 		323B659A25C40C9E002FC926 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323B659925C40C9E002FC926 /* Search.swift */; };
 		323B659F25C41E40002FC926 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323B659E25C41E40002FC926 /* DetailViewController.swift */; };
@@ -69,6 +70,7 @@
 
 /* Begin PBXFileReference section */
 		01E1607C8DFDA72F5DB94201 /* Pods-YandexMapTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YandexMapTask.release.xcconfig"; path = "Target Support Files/Pods-YandexMapTask/Pods-YandexMapTask.release.xcconfig"; sourceTree = "<group>"; };
+		32139D3025C45DA900C4D414 /* UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
 		323B659525C40B1E002FC926 /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
 		323B659925C40C9E002FC926 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		323B659E25C41E40002FC926 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -262,6 +264,7 @@
 				32DC97AE25C3130500947118 /* UISearchBar.swift */,
 				32DC97BA25C3F09F00947118 /* UIViewController.swift */,
 				323B65A825C42064002FC926 /* UIButton.swift */,
+				32139D3025C45DA900C4D414 /* UINavigationController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -664,6 +667,7 @@
 				32DC976925C2FC1700947118 /* MapViewController.swift in Sources */,
 				32DC97A025C30AF000947118 /* UIView.swift in Sources */,
 				32DC973725C2F0E300947118 /* Coordinator.swift in Sources */,
+				32139D3125C45DA900C4D414 /* UINavigationController.swift in Sources */,
 				32DC972E25C2EFFB00947118 /* AssetsImage.swift in Sources */,
 				32DC97A325C30DFE00947118 /* YandexMap.swift in Sources */,
 				32DC97BB25C3F09F00947118 /* UIViewController.swift in Sources */,

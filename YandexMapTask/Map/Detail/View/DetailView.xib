@@ -82,6 +82,7 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="addressLabel" destination="owq-ds-WCD" id="2tB-sw-f4Y"/>
+                <outlet property="button" destination="emp-06-E4M" id="dyE-qg-ijf"/>
                 <outlet property="nameLabel" destination="XRS-EA-9ge" id="Qmm-9C-34N"/>
             </connections>
             <point key="canvasLocation" x="-201" y="115"/>
