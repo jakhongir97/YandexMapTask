@@ -1,0 +1,18 @@
+ 
+[
+  {
+    "elements": "label.icon",
+    "stylers": {
+      "zoom": [13, 17],
+      "saturation": -0.75,
+      "scale": 1.5
+    }
+  },
+  {
+    "types": "polyline",
+    "stylers": {
+      "zoom": [13, 17],
+      "color": "#FFF"
+    }
+  }
+]

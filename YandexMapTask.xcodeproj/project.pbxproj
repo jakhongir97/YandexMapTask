@@ -16,6 +16,7 @@
 		323B65A925C42064002FC926 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323B65A825C42064002FC926 /* UIButton.swift */; };
 		323B65AC25C42B82002FC926 /* PersistManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323B65AB25C42B82002FC926 /* PersistManager.swift */; };
 		323B65B025C42BBF002FC926 /* CoreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323B65AF25C42BBF002FC926 /* CoreDataController.swift */; };
+		325B37E725EF9AA7006E00D0 /* mapStyle.json in Resources */ = {isa = PBXBuildFile; fileRef = 325B37E625EF9AA7006E00D0 /* mapStyle.json */; };
 		32DC970325C2EB9900947118 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC970225C2EB9900947118 /* AppDelegate.swift */; };
 		32DC970525C2EB9900947118 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC970425C2EB9900947118 /* SceneDelegate.swift */; };
 		32DC970725C2EB9900947118 /* AddessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC970625C2EB9900947118 /* AddessViewController.swift */; };
@@ -73,6 +74,7 @@
 		323B65A825C42064002FC926 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		323B65AB25C42B82002FC926 /* PersistManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistManager.swift; sourceTree = "<group>"; };
 		323B65AF25C42BBF002FC926 /* CoreDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataController.swift; sourceTree = "<group>"; };
+		325B37E625EF9AA7006E00D0 /* mapStyle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mapStyle.json; sourceTree = "<group>"; };
 		32DC96FF25C2EB9900947118 /* YandexMapTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YandexMapTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32DC970225C2EB9900947118 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32DC970425C2EB9900947118 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 				32DC971025C2EB9A00947118 /* LaunchScreen.storyboard */,
 				32DC971325C2EB9A00947118 /* Info.plist */,
 				32DC970B25C2EB9900947118 /* YandexMapTask.xcdatamodeld */,
+				325B37E625EF9AA7006E00D0 /* mapStyle.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -515,6 +518,7 @@
 			files = (
 				32DC975425C2F66800947118 /* AddressView.xib in Resources */,
 				32DC97AC25C3102C00947118 /* SearchView.xib in Resources */,
+				325B37E725EF9AA7006E00D0 /* mapStyle.json in Resources */,
 				32DC97B725C319C200947118 /* PickerPinView.xib in Resources */,
 				32DC977F25C2FD0A00947118 /* ProfileView.xib in Resources */,
 				32DC977025C2FC2B00947118 /* MapView.xib in Resources */,

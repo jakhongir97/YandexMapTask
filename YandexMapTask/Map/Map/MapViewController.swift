@@ -91,6 +91,7 @@ class MapViewController: UIViewController, ViewSpecificController, AlertViewCont
 extension MapViewController {
     private func appearanceSettings() {
         searchView.searchBar.delegate = self
+        setupMapStyle()
         closeKeyboardOnOutsideTap()
         setupDataProvider()
     }
@@ -336,6 +337,33 @@ extension MapViewController : YMKMapCameraListener {
     func onCameraPositionChanged(with map: YMKMap, cameraPosition: YMKCameraPosition, cameraUpdateReason: YMKCameraUpdateReason, finished: Bool) {
         if finished {
             self.centerPoint = cameraPosition.target
+        }
+    }
+}
+
+// MARK: - MapKit Style
+extension MapViewController {
+    
+    private func setupMapStyle() {
+        view().mapView.mapWindow.map.setMapStyleWithStyle(MapViewController.style())
+    }
+    
+    private static func style() -> String {
+        return MapViewController.readRawJson(resourceName: "mapStyle")!
+    }
+
+    private static func readRawJson(resourceName: String) -> String? {
+        if let filepath: String = Bundle.main.path(forResource: resourceName, ofType: "json") {
+            do {
+                let contents = try String(contentsOfFile: filepath)
+                return contents
+            } catch {
+                NSLog("JsonError: Contents could not be loaded from json file: " + resourceName)
+                return nil
+            }
+        } else {
+            NSLog("JsonError: json file not found: " + resourceName)
+            return nil
         }
     }
 }
