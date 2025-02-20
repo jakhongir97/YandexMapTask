@@ -25,6 +25,11 @@ final class TabBarController: UITabBarController {
         createControllers()
     }
     
+    init() {
+        super.init(nibName: nil, bundle: nil)
+        createControllers()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         appearanceSettings()
